@@ -7,7 +7,7 @@
     <title>Object</title>
 </head>
 <body>
-    <h1>Object</h1>
+    <h1>Object-객체</h1>
     <h2>Family</h2>
     <script>
         var family = {
@@ -23,6 +23,21 @@
         //띄어쓰기 넣고 추가하고싶다면?
         family["naoni boyfriend"] = "gh";
         document.write("naoni boyfriend : " + family["naoni boyfriend"] + "<br>");
+    </script>
+    <h2>Iterate-반복문</h2>
+    <script>
+        for(var key in family){
+            document.write(key+' : '+family[key]+'<br>');
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        family.showAll = function() {
+            for(var key in this){
+                document.write(key+' : '+this[key]+'<br>');
+            }
+        }
+        family.showAll();
     </script>
 </body>
 </html>
