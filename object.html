@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Family</h2>
+    <script>
+        var family = {
+            "me" : "daoni",
+            "sister" : "naoni",
+            "mom" : "hyangah"
+        };
+        document.write("me : " + family.me+"<br>");
+        document.write("sister : " + family.sister+"<br>");
+        //만들어진 객체에 정보 추가
+        family.boyfriend = "hs";
+        document.write("boyfriend : " + family.boyfriend + "<br>");
+        //띄어쓰기 넣고 추가하고싶다면?
+        family["naoni boyfriend"] = "gh";
+        document.write("naoni boyfriend : " + family["naoni boyfriend"] + "<br>");
+    </script>
+</body>
+</html>
